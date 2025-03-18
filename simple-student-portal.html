@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abbos Muminov - Student Portal</title>
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --light-bg: #f5f7fa;
+            --text-color: #34495e;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-bg);
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            margin-bottom: 30px;
+        }
+        
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .profile-section {
+            display: flex;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            margin-bottom: 30px;
+        }
+        
+        .profile-image {
+            width: 30%;
+            background-color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .profile-image .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+        
+        .profile-info {
+            width: 70%;
+            padding: 30px;
+        }
+        
+        .profile-info h2 {
+            margin-top: 0;
+            color: var(--secondary-color);
+        }
+        
+        .profile-info p {
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+        
+        .info-item {
+            display: flex;
+            margin-bottom: 10px;
+        }
+        
+        .info-item strong {
+            width: 120px;
+            color: var(--secondary-color);
+        }
+        
+        .assignments-section {
+            background: white;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: var(--shadow);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .assignments-section h2 {
+            margin-top: 0;
+            color: var(--secondary-color);
+            padding-bottom: 10px;
+        }
+        
+        .assignment-btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: var(--shadow);
+        }
+        
+        .assignment-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        .assignment-btn i {
+            margin-right: 8px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: var(--text-color);
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .profile-section {
+                flex-direction: column;
+            }
+            
+            .profile-image, .profile-info {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Abbos Muminov</h1>
+            <p>Student Portal</p>
+        </header>
+        
+        <div class="profile-section">
+            <div class="profile-image">
+                <div class="avatar">AM</div>
+            </div>
+            <div class="profile-info">
+                <h2>Student Information</h2>
+                <div class="info-item">
+                    <strong>Full Name:</strong>
+                    <span>Abbos Muminov</span>
+                </div>
+                <div class="info-item">
+                    <strong>Student ID:</strong>
+                    <span>2417434</span>
+                </div>
+                <div class="info-item">
+                    <strong>University:</strong>
+                    <span>Dong-A University</span>
+                </div>
+                <div class="info-item">
+                    <strong>Program:</strong>
+                    <span>Integrated Business Management</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="assignments-section">
+            <a href="https://drive.google.com/drive/folders/1MauPH-Dk9ia04Dddz0aQDChNJE6kLzsB?usp=sharing" 
+               class="assignment-btn" target="_blank">
+                <i>📁</i> My Assignments
+            </a>
+        </div>
+        
+        <footer>
+            &copy; 2025 Abbos Muminov | Dong-A University | Integrated Business Management
+        </footer>
+    </div>
+</body>
+</html>
